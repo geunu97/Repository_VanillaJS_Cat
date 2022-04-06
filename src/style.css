@@ -32,6 +32,25 @@ body * {
   grid-gap: 10px;
 }
 
+@media (max-width: 992px){
+  .SearchResult {
+    grid-template-columns: repeat(3, minmax(250px,1fr));
+  }
+}
+
+@media (max-width: 768px){
+  .SearchResult {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 576px){
+  .SearchResult{
+    grid-template-columns: repeat(1,minmax(250px,1fr));
+  }
+}
+
+
 .SearchResult img {
   width: 100%;
   height: 100%;
