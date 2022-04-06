@@ -3,7 +3,7 @@ export default class ImageInfo {
   data = null;
 
   constructor({ $target, data }) {
-    const $imageInfo = document.createElement("div");
+    const $imageInfo = document.createElement("section");
     $imageInfo.className = "ImageInfo";
     this.$imageInfo = $imageInfo;
     $target.appendChild($imageInfo);
