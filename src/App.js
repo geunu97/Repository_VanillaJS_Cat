@@ -1,6 +1,11 @@
+import SearchInput from "./components/SearchInput.js";
+import SearchResult from "./components/SearchResult.js";
+import ImageInfo from "./components/ImageInfo.js";
+import api from "./api/api.js";
+
 console.log("app is running!");
 
-class App {
+export default class App {
   $target = null;
   data = [];
 
