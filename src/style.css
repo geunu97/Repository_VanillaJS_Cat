@@ -103,11 +103,44 @@ body * {
   width: 100%;
 }
 
-/* dark mode 처리
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
     color: white;
+  }   
+  .ImageInfo .content-wrapper {
+    background-color: black;
+    color: white;
   }
 }
-*?
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+  .ImageInfo .content-wrapper {
+    background-color: white;
+    color: black;
+  }
+}
+
+.dark {
+  background-color: black;
+  color:white;
+}
+
+.dark .ImageInfo .content-wrapper {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.light .ImageInfo .content-wrapper {
+  background-color: white;
+  color: black;
+}

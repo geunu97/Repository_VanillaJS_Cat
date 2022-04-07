@@ -1,6 +1,7 @@
 import SearchInput from "./components/SearchInput.js";
 import SearchResult from "./components/SearchResult.js";
 import ImageInfo from "./components/ImageInfo.js";
+import ChangeMode from "./components/ChangeMode.js";
 import api from "./api/api.js";
 
 console.log("app is running!");
@@ -11,6 +12,8 @@ export default class App {
 
   constructor($target) {
     this.$target = $target;
+
+    this.changeMode = new ChangeMode($target);
 
     this.searchInput = new SearchInput({
       $target,
