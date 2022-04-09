@@ -7,6 +7,8 @@ export default class ChangeMode {
     $changemodeBlock.className = "changeboxblock";
     const $changemode = document.createElement("input");
     $changemode.type = "checkbox";
+
+    this.$changemodeBlock = $changemodeBlock;
     this.$changemode = $changemode;
 
     $changemodeBlock.appendChild($changemode);
