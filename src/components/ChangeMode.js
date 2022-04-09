@@ -1,11 +1,16 @@
 export default class ChangeMode {
+  $changemodeBlock = null;
   $changemode = null;
 
   constructor($target) {
+    const $changemodeBlock = document.createElement("header");
+    $changemodeBlock.className = "changeboxblock";
     const $changemode = document.createElement("input");
     $changemode.type = "checkbox";
-    $changemode.className = "Changebox";
     this.$changemode = $changemode;
+
+    $changemodeBlock.appendChild($changemode);
+    $target.appendChild($changemodeBlock);
 
     $changemode.addEventListener("click", () => {
       const currentmode = window.matchMedia(
@@ -26,7 +31,5 @@ export default class ChangeMode {
         document.querySelector("body").className = "light";
       }
     });
-
-    $target.appendChild($changemode);
   }
 }
