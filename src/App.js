@@ -30,6 +30,12 @@ export default class App {
           visible: true,
           image,
         });
+        api.fetchCatDetails(image.id).then(({ data }) =>
+          this.imageInfo.setState({
+            visible: true,
+            image: data,
+          })
+        );
       },
     });
 

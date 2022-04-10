@@ -38,5 +38,20 @@ export default class ImageInfo {
     } else {
       this.$imageInfo.style.display = "none";
     }
+
+    document.addEventListener("click", (e) => {
+      if (
+        e.target == document.querySelector(".ImageInfo") ||
+        e.target === document.querySelector(".close")
+      ) {
+        this.$imageInfo.style.display = "none";
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        this.$imageInfo.style.display = "none";
+      }
+    });
   }
 }

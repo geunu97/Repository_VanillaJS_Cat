@@ -7,6 +7,9 @@ const api = {
       res.json()
     );
   },
+  fetchCatDetails: (id) => {
+    return fetch(`${API_ENDPOINT}/api/cats/${id}`).then((res) => res.json());
+  },
 };
 
 export default api;

@@ -149,3 +149,9 @@ body * {
   background-color: white;
   color: black;
 }
+
+@media (max-width: 768px){
+  .ImageInfo .content-wrapper{
+    width: 100%;
+  }
+}
