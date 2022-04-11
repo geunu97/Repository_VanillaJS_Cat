@@ -20,6 +20,7 @@ export default class ImageInfo {
 
   render() {
     if (this.data.visible) {
+      this.$imageInfo.classList.remove("fadeout");
       const { name, url, temperament, origin } = this.data.image;
 
       this.$imageInfo.innerHTML = `
@@ -44,12 +45,14 @@ export default class ImageInfo {
         e.target == document.querySelector(".ImageInfo") ||
         e.target === document.querySelector(".close")
       ) {
+        this.$imageInfo.classList.add("fadeout");
         this.$imageInfo.style.display = "none";
       }
     });
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
+        this.$imageInfo.classList.add("fadeout");
         this.$imageInfo.style.display = "none";
       }
     });

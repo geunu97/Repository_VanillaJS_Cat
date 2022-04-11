@@ -26,10 +26,6 @@ export default class App {
       $target,
       initialData: this.data,
       onClick: (image) => {
-        this.imageInfo.setState({
-          visible: true,
-          image,
-        });
         api.fetchCatDetails(image.id).then(({ data }) =>
           this.imageInfo.setState({
             visible: true,
