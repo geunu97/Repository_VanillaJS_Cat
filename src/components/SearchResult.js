@@ -12,6 +12,9 @@ export default class SearchResult {
     this.onClick = onClick;
 
     this.render();
+
+    const $LastResultData = JSON.parse(localStorage.getItem("data"));
+    if ($LastResultData) this.setState($LastResultData);
   }
 
   setState(nextData) {

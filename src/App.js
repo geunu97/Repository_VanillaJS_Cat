@@ -58,6 +58,8 @@ export default class App {
   }
 
   setState(nextData) {
+    localStorage.setItem("data", JSON.stringify(nextData));
+
     console.log(this);
     this.data = nextData;
     this.searchResult.setState(nextData);
