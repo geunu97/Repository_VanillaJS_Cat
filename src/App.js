@@ -34,13 +34,17 @@ export default class App {
     this.searchResult = new SearchResult({
       $target,
       initialData: this.data,
-      onClick: (image) => {
-        api.fetchCatDetails(image.id).then(({ data }) =>
+      onClick: async (image) => {
+        let response = null;
+        this.loading.startLoading();
+        response = await api.fetchCatDetails(image.id);
+        if (response != null) {
+          this.loading.finishLoading();
           this.imageInfo.setState({
             visible: true,
-            image: data,
-          })
-        );
+            image: response.data,
+          });
+        }
       },
     });
 
