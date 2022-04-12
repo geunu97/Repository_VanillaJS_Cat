@@ -2,6 +2,7 @@ import SearchInput from "./components/SearchInput.js";
 import SearchResult from "./components/SearchResult.js";
 import ImageInfo from "./components/ImageInfo.js";
 import ChangeMode from "./components/ChangeMode.js";
+import Loading from "./components/Loading.js";
 import api from "./api/api.js";
 
 console.log("app is running!");
@@ -15,10 +16,18 @@ export default class App {
 
     this.changeMode = new ChangeMode($target);
 
+    this.loading = new Loading($target);
+
     this.searchInput = new SearchInput({
       $target,
-      onSearch: (keyword) => {
-        api.fetchCats(keyword).then(({ data }) => this.setState(data));
+      onSearch: async (keyword) => {
+        let response = null;
+        this.loading.startLoading();
+        response = await api.fetchCats(keyword);
+        if (response != null) {
+          this.loading.finishLoading();
+          this.setState(response.data);
+        }
       },
     });
 
