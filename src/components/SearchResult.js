@@ -15,8 +15,12 @@ export default class SearchResult {
   }
 
   setState(nextData) {
-    this.data = nextData;
-    this.render();
+    if (nextData.length === 0) {
+      this.$searchResult.innerHTML = "<h2>검색 결과가 없습니다</h2>";
+    } else {
+      this.data = nextData;
+      this.render();
+    }
   }
 
   render() {
