@@ -234,3 +234,14 @@ body * {
   }
 }
 
+.latestBlock {
+  width: 100%;
+  color: gray;
+}
+
+.latest {
+  font-size: 2rem;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
