@@ -43,10 +43,10 @@ export default class App {
     this.searchResult = new SearchResult({
       $target,
       initialData: this.data,
-      onClick: async (image) => {
+      onClick: async (id) => {
         let response = null;
         this.loading.startLoading();
-        response = await api.fetchCatDetails(image.id);
+        response = await api.fetchCatDetails(id);
         if (response != null) {
           this.loading.finishLoading();
           this.imageInfo.setState({

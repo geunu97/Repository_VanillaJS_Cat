@@ -15,6 +15,11 @@ export default class SearchResult {
 
     const $LastResultData = JSON.parse(localStorage.getItem("data"));
     if ($LastResultData) this.setState($LastResultData);
+
+    this.$searchResult.addEventListener("click", (e) => {
+      this.onClick(e.target.id);
+      //this.onClick(e.target.closest("div").querySelector("img").id);
+    });
   }
 
   setState(nextData) {
@@ -31,16 +36,10 @@ export default class SearchResult {
       .map(
         (cat) => `
           <div class="item" title=${cat.name}>
-            <img src=${cat.url} alt=${cat.name} />
+            <img src=${cat.url} alt=${cat.name} id=${cat.id} />
           </div>
         `
       )
       .join("");
-
-    this.$searchResult.querySelectorAll(".item").forEach(($item, index) => {
-      $item.addEventListener("click", () => {
-        this.onClick(this.data[index]);
-      });
-    });
   }
 }
