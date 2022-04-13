@@ -245,3 +245,16 @@ body * {
   padding: 5px;
   cursor: pointer;
 }
+
+.SearchBlock {
+  display: flex;
+}
+
+.RandomButton {
+  width: 8%;
+  margin: 0rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

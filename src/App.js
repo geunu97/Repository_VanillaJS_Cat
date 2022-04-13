@@ -29,6 +29,15 @@ export default class App {
           this.setState(response.data);
         }
       },
+      onRandom: async () => {
+        let response = null;
+        this.loading.startLoading();
+        response = await api.fetchCatRandom();
+        if (response != null) {
+          this.loading.finishLoading();
+          this.setState(response.data);
+        }
+      },
     });
 
     this.searchResult = new SearchResult({

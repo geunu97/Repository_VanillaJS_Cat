@@ -3,13 +3,22 @@ const TEMPLATE = '<input type="text">';
 export default class SearchInput {
   latestArr = [];
 
-  constructor({ $target, onSearch }) {
+  constructor({ $target, onSearch, onRandom }) {
+    const $searchblock = document.createElement("div");
+    $searchblock.className = "SearchBlock";
+    $target.appendChild($searchblock);
+
     const $searchInput = document.createElement("input");
     this.$searchInput = $searchInput;
     this.$searchInput.placeholder = "고양이를 검색해보세요.|";
     this.$searchInput.autofocus = true;
     $searchInput.className = "SearchInput";
-    $target.appendChild($searchInput);
+    $searchblock.appendChild($searchInput);
+
+    const $randombutton = document.createElement("button");
+    $randombutton.innerText = "랜덤 버튼";
+    $randombutton.className = "RandomButton";
+    $searchblock.appendChild($randombutton);
 
     const $latest = document.createElement("div");
     $latest.className = "latestBlock";
@@ -17,6 +26,10 @@ export default class SearchInput {
     $target.appendChild($latest);
 
     this.onSearch = onSearch;
+
+    $randombutton.addEventListener("click", () => {
+      onRandom();
+    });
 
     $searchInput.addEventListener("keyup", (e) => {
       if (e.keyCode === 13) {
