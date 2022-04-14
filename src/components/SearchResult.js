@@ -18,7 +18,6 @@ export default class SearchResult {
 
     this.$searchResult.addEventListener("click", (e) => {
       this.onClick(e.target.id);
-      //this.onClick(e.target.closest("div").querySelector("img").id);
     });
   }
 
