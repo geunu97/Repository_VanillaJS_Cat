@@ -7,8 +7,8 @@
 
 ## 정리
 
-<a href="https://geunu97-8.notion.site/0590d7eceb4c4b9e8ae7d0eef9c7bf73" title="notion" target="_blank">🐱 Notion (~ing)</a>
+<a href="https://geunu97-8.notion.site/0590d7eceb4c4b9e8ae7d0eef9c7bf73" title="notion" target="_blank">🐱 Notion</a>
 
 ## 확인
 
-<a href="https://glistening-fairy-1d6400.netlify.app" title="고양이 사진 검색 사이트" target="_blank">🐱 확인하러가기 (~ing)</a>
+<a href="https://glistening-fairy-1d6400.netlify.app" title="고양이 사진 검색 사이트" target="_blank">🐱 확인하러가기</a>
