@@ -10,7 +10,7 @@ export default class SearchInput {
 
     const $searchInput = document.createElement("input");
     this.$searchInput = $searchInput;
-    this.$searchInput.placeholder = "고양이를 검색해보세요.";
+    this.$searchInput.placeholder = "고양이를 검색해보세요123123.";
     this.$searchInput.autofocus = true;
     $searchInput.className = "SearchInput";
     $searchblock.appendChild($searchInput);
