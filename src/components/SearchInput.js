@@ -31,6 +31,16 @@ export default class SearchInput {
       onRandom();
     });
 
+    var timer = 0;
+    $searchInput.addEventListener("input", (e) => {
+      if (timer) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(() => {
+        if (e.target.value !== "") onSearch(e.target.value);
+      }, 500);
+    });
+
     $searchInput.addEventListener("keyup", (e) => {
       if (e.keyCode === 13) {
         onSearch(e.target.value);
