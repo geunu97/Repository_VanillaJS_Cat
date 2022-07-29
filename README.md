@@ -1,4 +1,4 @@
-<h1 align="center">고양이 사진 검색 사이트</h1>
+<h1 align="center">고양이 사진관</h1>
 <p align="center">프로그래머스 2020 Frontend Dev Matching with VanillaJS</p>
 
 ## 문제
