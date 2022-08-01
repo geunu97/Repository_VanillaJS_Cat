@@ -11,8 +11,8 @@
 
 ## 확인
 
-- <a href="https://steady-brioche-c20cba.netlify.app" title="고양이 사진관" target="_blank">데모사이트</a>
+- <a href="https://geunu-vanillajs-cat.netlify.app" title="고양이 사진관" target="_blank">데모사이트</a>
 
 ## 전환
 
-- 현재 <a href="https://github.com/geunu97/Repository_React_Cat" title="고양이 사진관" target="_blank">리액트 고양이 사진관</a>으로 전환중 입니다.
+- 현재 <a href="https://github.com/geunu97/Repository_React_Cat" title="고양이 사진관" target="_blank">리액트 고양이 사진관</a>으로 전환 해보고 있습니다.
