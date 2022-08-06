@@ -12,11 +12,11 @@
 - 모달창
 - 디바운싱
 
-## 기록
+## 문제해결 과정
 
-- <a href="https://geunu97-8.notion.site/0590d7eceb4c4b9e8ae7d0eef9c7bf73" title="notion" target="_blank">개발 및 문제해결 과정을 기록했습니다.</a>
+- <a href="https://geunu97-8.notion.site/0590d7eceb4c4b9e8ae7d0eef9c7bf73" title="notion" target="_blank">전체적인 개발 및 문제해결 과정을 기록했습니다.</a>
 
-## 참고 자료
+## 자료
 
 - <a href="https://geunu97-6.notion.site/Javascript-JS-6c3e9a89885246e99ca33438609b6fd3" title="자바스크립트">자바스크립트</a>
 
