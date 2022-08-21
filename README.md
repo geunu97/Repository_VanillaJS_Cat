@@ -22,4 +22,4 @@
 
 ## 전환
 
-- 현재 바닐라 자바스크립트와 리액트의 차이를 직접 경험해보고 싶어서 <a href="https://github.com/geunu97/Repository_React_Cat" title="고양이 사진관" target="_blank">리액트 고양이 사진관</a>으로 전환중 입니다.
+- 현재 스킬 향상을 위해 <a href="https://github.com/geunu97/Repository_React_Cat" title="고양이 사진관" target="_blank">리액트 고양이 사진관</a>으로 전환중 입니다.
