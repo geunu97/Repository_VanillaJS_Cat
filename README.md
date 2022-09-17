@@ -4,13 +4,13 @@
 
 ## 작업 내용
 
-- 검색 및 렌더링
-- 검색어 저장
-- Web Storage
-- 모바일뷰
-- 다크모드
-- 모달창
-- 디바운싱
+- 검색 API를 이용하여 렌더링 작업
+- 검색어 저장 작업
+- Web Storage를 이용하여 마지막 검색어 저장 작업
+- media쿼리 사용하여 모바일 뷰 고려
+- 다크모드 개발
+- 검색어 결과 상세보기 모달창 개발
+- 검색어 입력창 디바운싱 적용
 
 ## 문제해결 과정
 
@@ -22,4 +22,4 @@
 
 ## 전환
 
-- 현재 스킬 향상을 위해 <a href="https://github.com/geunu97/Repository_React_Cat" title="고양이 사진관" target="_blank">리액트 고양이 사진관</a>으로 전환중 입니다.
+- 현재 스킬 향상을 위해 <a href="https://github.com/geunu97/Repository_React_Cat" title="고양이 사진관" target="_blank">리액트 고양이 사진관</a>으로 전환했습니다.
