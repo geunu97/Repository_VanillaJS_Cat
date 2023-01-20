@@ -12,6 +12,6 @@
 - 다크모드 
 - 검색어 입력창 디바운싱 적용
 
-# 배운점
+## 배운점
 - 자바스크립트(ES6+) 기본 문법과 개념에 대해 알게 되었으며, 학습한 내용을  <a href="https://geunu97-6.notion.site/Javascript-JS-6c3e9a89885246e99ca33438609b6fd3" title="자바스크립트">Notion</a>에 정리하였습니다.
 
